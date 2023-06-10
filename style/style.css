@@ -110,6 +110,15 @@ nav .container{
     }
 }
 
+@media (max-width:320px) {
+    .circle{
+      
+
+        left: 25%;
+        top: 18%;
+    }
+}
+
 .profile-img{
   border-radius: 50%;
   width: 120px;
