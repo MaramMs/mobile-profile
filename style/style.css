@@ -24,57 +24,46 @@ nav{
 nav .container{
     position: relative;
 }
+.menuToggle{
+    width:50px;
+    height:50px;
+    background:#ff4886;
+    border-radius:50%;
+    display:flex;
+      justify-content:center;
+    align-items:center;
+    z-index:10;
+  transform: translateY(-30px); 
+  left: 42%;
+  position: absolute;
+  }
+  
+  .menuToggle::before{
+    content:'+';
+      position:absolute;
+    color:#fff;
+    font-size:2rem;
+    transition:1.5s;
+    
+  }
 
-.circle-nav{
-    position: absolute;
-    left: 41%;
-    top: -97%;
-    border-left: none;
-    border-right: none;
-}
-.circle-nav {
-    width: 80px;
-    height: 80px;
-    border: 1px solid #33333394;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-    border-top: none;
-    border-top-left-radius: none;
-    border-top-right-radius: none;
-
-}
-
-
-.circle-nav-icon{
-    width: 50px;
-    height: 50px;
-     border-radius: 50%;
-     background-color: #03256C;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-}
-.circle-nav-icon span{
-    color: #fff;
-    font-size: 36px;
-    font-weight: 600;
-}
-
-
-.nav-icons span i {
-    color: #33333336;
-    font-size: 20px;
-}
-
-.nav-icons span.active i{
-    color: #03256C;
-}
-.nav-icons{
+  .menu {
+    background: #fff;
+    border-radius: 70px;
     display: flex;
+    padding: 20px 0px;
     justify-content: space-between;
     align-items: center;
-    padding: 14px 0px;
-}
+  }
+
+  .menu i{
+    color: #33333394;
+  }
+
+  .menu i.active{
+    color: #03256C;
+  }
+
 .profile-info{
     display: flex;
     flex-direction: column;
@@ -206,42 +195,3 @@ padding: 5px;
 
 
 
-  .menuToggle{
-    width:50px;
-    height:50px;
-    background:#ff4886;
-    border-radius:50%;
-    display:flex;
-      justify-content:center;
-    align-items:center;
-    z-index:10;
-  transform: translateY(-30px); 
-  left: 42%;
-  position: absolute;
-  }
-  
-  .menuToggle::before{
-    content:'+';
-      position:absolute;
-    color:#fff;
-    font-size:2rem;
-    transition:1.5s;
-    
-  }
-
-  .menu {
-    background: #fff;
-    border-radius: 70px;
-    display: flex;
-    padding: 20px 0px;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .menu i{
-    color: #33333394;
-  }
-
-  .menu i.active{
-    color: #03256C;
-  }
