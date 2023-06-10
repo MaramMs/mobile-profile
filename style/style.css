@@ -21,6 +21,9 @@ nav{
     background-color: #fff;
   
 }
+nav .container{
+    position: relative;
+}
 
 .circle-nav{
     position: absolute;
@@ -41,6 +44,7 @@ nav{
 
 }
 
+
 .circle-nav-icon{
     width: 50px;
     height: 50px;
@@ -55,6 +59,7 @@ nav{
     font-size: 36px;
     font-weight: 600;
 }
+
 
 .nav-icons span i {
     color: #33333336;
@@ -79,24 +84,38 @@ nav{
    position: relative;
    margin-top: -65px;
 }
+.img-cover{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    position: relative;
+}
 .circle{
     height: 159px;
     width: 160px;
     border-radius: 164%;
-    /* background-color: red; */
     position: absolute;
     bottom: top;
-    top: 22%;
+    top: 24%;
     left: 30%;
-    /* background: transparent; */
     background: #fff;
+    z-index: 10;
+  
+
 
 }
+@media (min-width:575px) {
+    .circle{
+        left: 45%;
+    }
+}
+
 .profile-img{
   border-radius: 50%;
   width: 120px;
   height: 120px;
-  border: 1px solid  #03256C;;
+  border: 1px solid  #03256C;
+  z-index: 20;
 }
 
 .profile-name{
@@ -174,3 +193,46 @@ padding: 5px;
     height: 150px;
     object-fit: cover;
 }
+
+
+
+
+  .menuToggle{
+    width:50px;
+    height:50px;
+    background:#ff4886;
+    border-radius:50%;
+    display:flex;
+      justify-content:center;
+    align-items:center;
+    z-index:10;
+  transform: translateY(-30px); 
+  left: 42%;
+  position: absolute;
+  }
+  
+  .menuToggle::before{
+    content:'+';
+      position:absolute;
+    color:#fff;
+    font-size:2rem;
+    transition:1.5s;
+    
+  }
+
+  .menu {
+    background: #fff;
+    border-radius: 70px;
+    display: flex;
+    padding: 20px 0px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu i{
+    color: #33333394;
+  }
+
+  .menu i.active{
+    color: #03256C;
+  }
